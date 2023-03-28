@@ -76,12 +76,12 @@ const Poke = [
     id: 12,
   },
 ];
-// 
+
 function PokemonList() {
   return (
     <section className="pokelist">
       {Poke.map((Poke) => {
-        console.log(Poke);
+        // console.log(Poke);
         return <Pokemon Poke={Poke} key={Poke.id} />;
       })}
     </section>
