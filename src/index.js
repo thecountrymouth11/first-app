@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import { Poke } from "./Poke";
+import Pokemon from "./Pokemon";
 
 function PokemonList() {
   return (
@@ -13,16 +14,6 @@ function PokemonList() {
     </section>
   );
 }
-// functional component
-const Pokemon = ({ Poke: { image, name, type } }) => {
-  return (
-    <article className="pokemon">
-      <img src={image} alt={name} />
-      <h3>{name}</h3>
-      <h5>{type}</h5>
-    </article>
-  );
-};
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(<PokemonList />);
