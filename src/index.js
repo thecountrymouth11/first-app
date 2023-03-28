@@ -6,12 +6,15 @@ import Pokemon from "./Pokemon";
 
 function PokemonList() {
   return (
-    <section className="pokelist">
-      {Poke.map((Poke) => {
-        // console.log(Poke);
-        return <Pokemon Poke={Poke} key={Poke.id} />;
-      })}
-    </section>
+    <>
+    <h1>Pokedex</h1>
+      <section className="pokelist">
+        {Poke.map((Poke) => {
+          // console.log(Poke);
+          return <Pokemon Poke={Poke} key={Poke.id} />;
+        })}
+      </section>
+    </>
   );
 }
 
