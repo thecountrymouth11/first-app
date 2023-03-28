@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-
+// array of objects
 const Poke = [
   {
     name: "Squirtle",
@@ -76,7 +76,7 @@ const Poke = [
     id: 12,
   },
 ];
-
+// 
 function PokemonList() {
   return (
     <section className="pokelist">
@@ -87,6 +87,7 @@ function PokemonList() {
     </section>
   );
 }
+// functional component
 const Pokemon = ({ Poke: { image, name, type } }) => {
   return (
     <article className="pokemon">
