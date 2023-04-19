@@ -66,3 +66,32 @@ h1 {
   color: #fff;
 }
 
+@media screen and (max-width: 767px) {
+  /* Changes for mobile devices / */
+  .pokelist {
+    margin: 2rem auto;
+    /* Updated margin for smaller screens */
+    grid-template-columns: repeat(1, 1fr);
+    /* Changed to a single column */
+    gap: 1rem;
+    /* Decreased gap between items */
+  }
+  .pokemon {
+    padding: 1.5rem;
+    /* Decreased padding */
+  }
+  .pokemon h3 {
+    font-size: 1.1rem;
+    /* Decreased font size */
+    margin-top: 0.5rem;
+    /* Decreased margin */
+  }
+  .pokemon h5 {
+    font-size: 0.8rem;
+    /* Decreased font size */
+  }
+  h1 {
+    margin-top: 2rem;
+    /* Updated margin for smaller screens */
+  }
+}
